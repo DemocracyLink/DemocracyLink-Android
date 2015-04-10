@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="provinces_array">
+        <item>Alberta</item>
+        <item>Colombie-Britannique</item>
+        <item>Manitoba</item>
+        <item>Nouveau-Brunswick</item>
+        <item>Terre-Neuve-et-Labrador</item>
+        <item>Territoires du Nord-Ouest</item>
+        <item>Nouvelle-Écosse</item>
+        <item>Nunavut</item>
+        <item>Ontario</item>
+        <item>Île-du-Prince-Édouard</item>
+        <item>Québec</item>
+        <item>Saskatchewan</item>
+        <item>Yukon</item>
+    </string-array>
+    <string-array name="signature_array">
+        <item>Merci</item>
+        <item>Signé</item>
+        <item>Salutations</item>
+        <item>Cordialement</item>
+        <item>Bonne chance</item>
+        <item>&lt;Aucun></item>
+    </string-array>
+
+</resources>

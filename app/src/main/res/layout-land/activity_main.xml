@@ -1,0 +1,268 @@
+
+<!--Copyright 2015 Ben Armstrong, Geoffrey De Ruiter-->
+
+<!--This file is part of Democracy Link.-->
+
+<!--Democracy Link is free software: you can redistribute it and/or modify-->
+<!--it under the terms of the GNU General Public License as published by-->
+<!--the Free Software Foundation, either version 3 of the License, or-->
+<!--(at your option) any later version.-->
+
+<!--This program is distributed in the hope that it will be useful,-->
+<!--but WITHOUT ANY WARRANTY; without even the implied warranty of-->
+<!--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the-->
+<!--GNU General Public License for more details.-->
+
+<!--You should have received a copy of the GNU General Public License-->
+<!--along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/grey_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/tiny_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/federal_short"
+                    android:id="@+id/textView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_horizontal"
+                    android:text="Put Federal Member Here"
+                    android:id="@+id/federalNameMain"
+                    android:clickable="true"
+                    android:onClick="reselectFederalMember"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/fed_phone_image"
+                    android:src="@drawable/phone_icon"
+                    android:clickable="true"
+                    android:contentDescription="Federal Phone" />
+                
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/fed_email_image"
+                    android:src="@drawable/email_icon"
+                    android:contentDescription="Federal Email"
+                    android:clickable="true" />
+                
+                
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.4"
+                android:layout_marginTop="@dimen/tiny_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/provincial_short"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center"
+                    android:text="Put Provincial Member Here"
+                    android:id="@+id/provincialNameMain"
+                    android:clickable="true"
+                    android:onClick="reselectProvincialMember" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prov_phone_image"
+                    android:src="@drawable/phone_icon"
+                    android:clickable="true"
+                    android:contentDescription="Provincial Phone"
+                    android:cropToPadding="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prov_email_image"
+                    android:src="@drawable/email_icon"
+                    android:contentDescription="Provincial Email"
+                    android:clickable="true"
+                    android:cropToPadding="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.3">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.4"
+                android:layout_marginTop="@dimen/tiny_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/municipal_short"
+                    android:id="@+id/textView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center"
+                    android:text="Edit Municipal Contacts"
+                    android:id="@+id/municipalMain"
+                    android:clickable="true"
+                    android:onClick="editMunicipalMembers" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/muni_phone_image"
+                    android:src="@drawable/phone_icon"
+                    android:clickable="true"
+                    android:contentDescription="Municipal Phone"
+                    android:cropToPadding="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/muni_email_image"
+                    android:src="@drawable/email_icon"
+                    android:contentDescription="Municipal Email"
+                    android:clickable="true"
+                    android:cropToPadding="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="0.15"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:id="@+id/about_image"
+                android:src="@drawable/about_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:onClick="startAbout"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:id="@+id/setup_image"
+                android:src="@drawable/settings_icon_white"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:onClick="startSetup"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:id="@+id/share_image"
+                android:src="@drawable/share_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2015 Ben Armstrong, Geoffrey De Ruiter-->
+
+<!--This file is part of Democracy Link.-->
+
+<!--Democracy Link is free software: you can redistribute it and/or modify-->
+<!--it under the terms of the GNU General Public License as published by-->
+<!--the Free Software Foundation, either version 3 of the License, or-->
+<!--(at your option) any later version.-->
+
+<!--This program is distributed in the hope that it will be useful,-->
+<!--but WITHOUT ANY WARRANTY; without even the implied warranty of-->
+<!--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the-->
+<!--GNU General Public License for more details.-->
+
+<!--You should have received a copy of the GNU General Public License-->
+<!--along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
+
+<resources>
+    
+    <string name="app_name">Democracy Link</string>
+    <string name="preference_file_key">com.example.democracylink.PREFERENCE_FILE_KEY</string>
+    <string name="setup1of4">Setup (1/4) </string>
+    <string name="setup2of4">Setup (2/4) </string>
+    <string name="setup3of4">Setup (3/4) </string>
+    <string name="setup4of4">Setup (4/4) </string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="name">Name</string>
+    <string name="degree">Degree/Accreditation:</string>
+    <string name="employment">Employment Position:</string>
+    <string name="employer">Employer:</string>
+    <string name="email_signature">Email Signature:</string>
+    <string name="title_activity_setup2">Setup2</string>
+    <string name="street_address">Street Address:</string>
+    <string name="unit_no">Unit #:</string>
+    <string name="city">City/Town:</string>
+    <string name="province">Province/Territory:</string>
+    <string name="postal_code">Postal Code:</string>
+    <string name="rep_setup">Representative Setup:</string>
+    <string name="rep_setup_guide">Use the search tool to quickly identify your representatives.</string>
+    <string name="find_constituency">Don\'t know your constituency? Click Here.</string>
+    <string name="federal">Federal:</string>
+    <string name="provincial">Provincial:</string>
+    <string name="municipal">Municipal:</string>
+    <string name="federal_short">Federal</string>
+    <string name="provincial_short">Provincial</string>
+    <string name="municipal_short">Municipal</string>
+    <string name="title_activity_setup1">Setup1</string>
+    <string name="disclaimer_label">Privacy Disclaimer:</string>
+    <string name="disclaimer1">No private information entered in this app will be used by Democracy Link.</string>
+    <string name="disclaimer2">Fields that are optional or recommended provide accountability and make your messages more personal.</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="welcome">Welcome to Democracy Link!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="contact_my_rep">Contact my Representative...</string>
+    <string name="title_activity_setup4">Setup4</string>
+    <string name="app_info">Democracy Link is a non-partisan app designed by Geoff de Ruiter to better link the voices of Canadians to their elected representatives</string>
+    <string name="more_info"><u>More Information</u></string>
+    <string name="close">Close</string>
+    <string name="empowered_citizens">Empowered Citizens</string>
+    <string name="empowered_citizens_text">Empowered citizens are the core of a strong democracy. They engage, not only in voting, but in the ongoing decision-making processes. They send letters, they meet with their elected representatives, they help develop policies through public consultation, and they present themselves in large demonstrations calling for what they wish to see. Many people have fought very hard, and even more have worked tirelessly to achieve our free and democratic society. Please empower yourself to speak your voice.</string>
+    <string name="representation">Representation</string>
+    <string name="representation_text">Elected representatives are tasked to listen and integrate the voices of all constituents, regardless if they voted for that member or not. All citizens, including yourself, should be empowered to provide an opinion to elected representatives as this will help foster a healthier and more democratic society.</string>
+    <string name="non_partisan_communication">Diplomatic &amp;  Non-Partisan Communication</string>
+    <string name="non_partisan_communication_text">Respect and tolerance within communication is fundamental to collective progress. When rhetoric, false information, and ideology of any type is allowed, our ability to converse is greatly degraded and we polarize our society. We should encourage humility and reflection from our elected representatives, and ourselves. Finally, showing empathy and understanding for other peoples\' viewpoints will help to foster a higher level of diplomatic and non-partisan conversation.</string>
+    <string name="canadian_democracy">Canadian Democracy</string>
+    <string name="canadian_democracy_text">"The government" should not be seen as separate from citizens, it should be viewed as \'our\' government. We have entrusted a select few to organize our governance, and ultimately, we the citizens of Canada, have full ability to steer our elected representatives through elections and influence.</string>
+    <string name="special_supporters">Special Supporters List</string>
+    <string name="special_supporters_text">Donate to get your name here!</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="donate">Donate</string>
+    <string name="feedback_body"></string>
+    <string name="feedback_subject">Democracy Link Android Feedback</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_member__list_">Member List Activity</string>
+    <string name="title_activity_municipal_member_adder">Add Municipal Contact</string>
+    <string name="add_municipal_contact">Add a Municipal Contact</string>
+    <string name="muni_contact_position">Position:</string>
+    <string name="muni_contact_name">Name:</string>
+    <string name="muni_contact_email">Email:</string>
+    <string name="muni_contact_phone">Phone:</string>
+    <string name="muni_contact_position_hint">Mayor, Councillor, etc...</string>
+    <string name="add_muni_contact_button">Save Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="federal_email">Federal Member Email Address</string>
+    <string name="provincial_email">Provincial Member Email Address</string>
+    <string name="federal_phone">Federal Member Phone Number</string>
+    <string name="provincial_phone">Provincial Member Phone Number</string>
+    <string name="federal_name">Federal Member Name</string>
+    <string name="provincial_name">Provincial Member Name</string>
+    <string name="bad_phone_number_title">Unrecognizable Phone Number</string>
+    <string name="bad_phone_number_text">Phone number is missing or unrecognizable. Please run setup again to correct the issue.</string>
+    <string name="bad_municipal_phone_text">Phone number is missing or unrecognizable. Please edit the selected contact to correct the issue.</string>
+    <string name="title_activity_create_email">Create Email</string>
+    <string name="first_name_error">First Name is required</string>
+    <string name="last_name_error">Last Name is required</string>
+    <string name="add_municipal_members">Add Municipal Members</string>
+    <string name="email_to">To:</string>
+    <string name="email_subject">Subject:</string>
+    <string name="email_body">Body:</string>
+    <string name="add_ministers">Add Ministers</string>
+    <string name="tips">Tips</string>
+    <string name="continue_text">Continue</string>
+    <string name="confirm">Confirm</string>
+    <string name="friendly_note_title">Some Friendly Advice</string>
+    <string name="friendly_note_1">1) Please proofread your message to check for spelling or grammar mistakes.</string>
+    <string name="friendly_note_2">2) Your elected representative is a human, please show respect and diplomacy in your message :)</string>
+    <string name="sort_members_by">Sort by Name</string>
+    <string name="title_activity_municipal_contact_email_selector">Send Email To...</string>
+    <string name="title_activity_municipal_contact_phone_selector">Make Call To...</string>
+    <string name="fetching_data">Fetching data, please wait...</string>
+    <string name="loading">Loading</string>
+    <string name="fedMPs">Federal MPs</string>
+    <string name="provMPs">Provincial MPs</string>
+    <string name="hold_contact">Hold a contact for options.</string>
+    <string name="title_activity_minister">MinisterActivity</string>
+    <string name="ministers">Ministers</string>
+    <string name="add">Add</string>
+    <string name="stats">Stats</string>
+    <string name="statistics">Statistics</string>
+    <string name="stats_phone">Phone calls made: </string>
+    <string name="stats_email">Emails sent: </string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="options">Options...</string>
+    <string name="needFederalInfo">Must have federal phone or email.</string>
+    <string name="needProvincialInfo">Must have provincial phone or email.</string>
+    <string name="dear">Dear</string>
+    <string name="required">Required</string>
+    <string name="optional">Optional</string>
+    <string name="recommended">Recommended</string>
+    <string name="no_federal_email">No federal email address found.</string>
+    <string name="no_provincial_email">No provincial email address found.</string>
+    <string name="no_municipal_contacts">No municipal contacts found.</string>
+    <string name="no_federal_phone">No federal phone number found.</string>
+    <string name="phone_permissions_unavailable">Phone permissions unavailable</string>
+    <string name="no_provincial_phone">No provincial phone number found.</string>
+    <string name="share_text">Start using DemocracyLink to make your voice heard to the government. More information at www.democracylink.ca</string>
+    <string name="share_subject">I\'m using Democracy Link to contact my elected representatives!</string>
+    <string name="share_intent_title">Share using...</string>
+    <string name="finish_setup">Finish Setup</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="minister_changed">Has a Minister changed? Click here.</string>
+    <string name="search_hint">Search Constituency or Name</string>
+
+</resources>

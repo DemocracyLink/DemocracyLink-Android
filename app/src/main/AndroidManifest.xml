@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright 2015 Ben Armstrong, Geoffrey De Ruiter-->
+
+<!--This file is part of Democracy Link.-->
+
+<!--Democracy Link is free software: you can redistribute it and/or modify-->
+<!--it under the terms of the GNU General Public License as published by-->
+<!--the Free Software Foundation, either version 3 of the License, or-->
+<!--(at your option) any later version.-->
+
+<!--This program is distributed in the hope that it will be useful,-->
+<!--but WITHOUT ANY WARRANTY; without even the implied warranty of-->
+<!--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the-->
+<!--GNU General Public License for more details.-->
+
+<!--You should have received a copy of the GNU General Public License-->
+<!--along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.democracylink.android.democracylink"
+    android:versionCode="2"
+    android:versionName="1.0.1">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="ca.democracylink.android.democracylink.DemocracyLinkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/maple_leaf"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ca.democracylink.android.democracylink.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.setup.Setup1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.setup.Setup2"
+            android:label="@string/app_name"
+            android:parentActivityName="ca.democracylink.android.democracylink.setup.Setup1"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.setup.Setup1" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.setup.Setup3"
+            android:label="@string/app_name"
+            android:parentActivityName="ca.democracylink.android.democracylink.setup.Setup2"
+            android:windowSoftInputMode="stateUnchanged" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.setup.Setup2" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.setup.Setup4"
+            android:label="@string/app_name"
+            android:parentActivityName="ca.democracylink.android.democracylink.setup.Setup3"
+            android:windowSoftInputMode="stateUnchanged" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.setup.Setup3" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.member.MemberListActivity"
+            android:label="@string/title_activity_member__list_"
+            android:parentActivityName="ca.democracylink.android.democracylink.setup.Setup4"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This is needed for the SearchView -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.setup.Setup4" />
+            >
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.About"
+            android:label="@string/app_name"
+            android:parentActivityName="ca.democracylink.android.democracylink.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.MainActivity" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.municipal.MunicipalContactAdder"
+            android:label="@string/title_activity_municipal_member_adder"
+            android:parentActivityName="ca.democracylink.android.democracylink.setup.Setup4"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.setup.Setup4" />
+ >
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.communication.CreateEmailActivity"
+            android:label="@string/title_activity_create_email"
+            android:parentActivityName="ca.democracylink.android.democracylink.MainActivity"
+            android:windowSoftInputMode="stateVisible" >
+            
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.MainActivity" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.communication.MunicipalContactEmailSelector"
+            android:label="@string/title_activity_municipal_contact_email_selector"
+            android:parentActivityName="ca.democracylink.android.democracylink.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.MainActivity" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.communication.MunicipalContactPhoneSelector"
+            android:label="@string/title_activity_municipal_contact_phone_selector"
+            android:parentActivityName="ca.democracylink.android.democracylink.MainActivity"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- This sets parent activity in 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ca.democracylink.android.democracylink.MainActivity" />
+        </activity>
+        <activity
+            android:name="ca.democracylink.android.democracylink.member.minister.MinisterListActivity"
+            android:label="@string/title_activity_minister" >
+        </activity>
+    </application>
+
+</manifest>
